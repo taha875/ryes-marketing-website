@@ -6,10 +6,16 @@ function layout({ children }) {
   return (
     <>
       <div className="flex ">
-        <Sidebar />
+        <div className="w-28">
+          <Sidebar />
+        </div>
 
-        <main className="h-full w-full
-         dark:border-gray-800 border-gray-200 mr-24 border-r">{children}</main>
+        <main
+          className="h-full w-full
+         dark:border-gray-800 border-gray-200 mr-24 border-r"
+        >
+          {children}
+        </main>
       </div>
       <Footer />
     </>
